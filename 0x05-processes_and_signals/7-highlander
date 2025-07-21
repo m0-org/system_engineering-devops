@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 # Your process displays "I am invincible!!!" when receiving a SIGTERM signal
 
-# Function to handle SIGTERM signal
-handle_sigterm() {
-    echo "I am invincible!!!"
-}
-
 # Set up signal handler for SIGTERM
-trap handle_sigterm SIGTERM
+trap 'echo "I am invincible!!!"' SIGTERM
 
 # Infinite loop
 while true
