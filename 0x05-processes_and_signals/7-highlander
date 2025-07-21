@@ -2,7 +2,7 @@
 # Your process displays "I am invincible!!!" when receiving a SIGTERM signal
 
 # Set up signal handler for SIGTERM
-trap 'echo "I am invincible!!!"' SIGTERM
+trap 'echo "I am invincible!!!"' TERM
 
 # Infinite loop
 while true
