@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Your process displays "I am invincible!!!" when receiving a SIGTERM signal
 
 # Function to handle SIGTERM signal
 handle_sigterm() {
